@@ -1,0 +1,711 @@
+body {
+  margin: 0;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.section {
+  width: 100%;
+}
+
+.our_price {
+  background-color: #A8D5BA;
+  /* padding: 20px; */
+  width: 100%;
+  /* height: 500px; */
+  /* overflow: hidden; */
+  position: relative;
+  margin: auto;
+}
+
+.price {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.our_price h1 {
+  color: white;
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+}
+
+.price_img img {
+  margin-top: 2rem;
+  width: 90%;
+  height: 550px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  font-size: 1.2rem;
+  color: #7c7182;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.tab.active {
+  color: white;
+  font-weight: bold;
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.content {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.note {
+  font-size: 0.8rem;
+  color: #181717;
+  margin-top: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: white;
+  color: #0b0c0c;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ece3f167;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .tabs {
+    gap: 15px;
+  }
+
+  .tab {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* hair */
+
+.hair_care {
+  margin-top: 2rem;
+}
+
+.Care {
+  padding-top: 50px;
+  text-align: center;
+}
+.white{
+  color: whitesmoke;
+}
+
+.service-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 100%;
+  margin: auto;
+  align-items: center;
+  background-image: url(/images/background/104.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.service-image,
+.service-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.service-image img {
+  width: 70%;
+  height: auto;
+  margin: 1rem;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.service-tabs {
+  display: flex;
+  justify-content: left;
+  gap: 30px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.service-tab {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.service-tab.active {
+  color: #5dbe84;
+  font-weight: bold;
+}
+
+.service-tab.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: white;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  text-align: center;
+  min-height: 120px;
+  transition: all 0.5s ease;
+}
+
+.service-note {
+  font-size: 0.8rem;
+  color: white;
+  margin-top: 8px;
+}
+
+.service-button {
+  display: inline-block;
+  background: #5dbe84;
+  color: white;
+  padding: 12px 28px;
+  margin-left: 16rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.service-button:hover {
+  background: #5a2170;
+}
+
+/* skin */
+
+.section.Skin_care {
+  margin-top: 2rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Care {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.service-skin_section {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url(/images/background/104.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.service-skin_image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  transition: 0.5s;
+  margin: 20px;
+}
+
+.service-skin_content {
+  flex: 1;
+  max-width: 100%;
+  margin-left: 3rem;
+}
+
+.service-skins {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.service-skin {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.service-skin.active {
+  border-color: white;
+  color: #5dbe84;
+}
+
+.service-skin_text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.service-skin_button {
+  display: inline-block;
+  background: #5dbe84;
+  color: white;
+  padding: 12px 28px;
+  margin-left: 16rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.service-skin_button:hover {
+  background-color: #e0d2f2;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Base Styles */
+
+.section.bodycare {
+  margin-top: 2rem;
+  background-color: #f6f0fa;
+  font-family: 'Poppins', sans-serif;
+}
+
+.service-body_section {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url(/images/background/104.jpg);
+}
+
+.serviceBody_Image img {
+  width: 100%;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.service_text {
+  margin-top: 100px;
+}
+
+.service_button {
+  display: inline-block;
+  background: #5dbe84;
+  color: white;
+  padding: 12px 28px;
+  margin-left: 16rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .service-skin_section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-skins {
+    justify-content: center;
+  }
+
+  .service-skin_image img {
+    max-width: 300px;
+  }
+
+  .Care {
+    font-size: 28px;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width:425px) {
+  .service-image img {
+    width: 90%;
+  }
+
+  .service-tabs {
+    gap: 10px;
+    margin-left: 1rem;
+  }
+
+  .service-tab {
+    font-size: 14px;
+  }
+
+  .service-button {
+    margin-left: 35%;
+  }
+
+  .price_img img {
+    display: none;
+  }
+
+  .section.Skin_care {
+    width: 105%;
+  }
+
+  .service-skin_image img {
+    width: 100%;
+  }
+
+  .service-skin_button {
+    margin-left: 0px;
+  }
+
+  .service-skin {
+    padding: 2px;
+    margin-left: -10px;
+  }
+
+  .service-skin_content {
+    margin-left: 1px;
+  }
+
+  .service_button {
+    margin-left: 0;
+    margin-left: 100px;
+  }
+
+  .service_text {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width:900px) {
+  .service-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-tabs {
+    gap: 20px;
+    text-align: center;
+    margin-left: 7rem;
+  }
+
+  .price_img img {
+    display: none;
+  }
+
+  .price {
+    margin-left: 5rem;
+  }
+
+  .service_text {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+
+.our_price-sec{
+  max-width: 1220px;
+  margin: auto;
+}
+
+.price_img {
+  width: 100%;
+  overflow: visible;
+}
+
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+
+
+
+.pricing-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.pricing-left {
+  flex: 1 1 50%;
+  min-width: 300px;
+  max-width: 100%;
+}
+
+.pricing-left img {
+  width: 380px;
+  margin: auto;
+  height: 550px;
+  object-fit: fill;
+  transition: 0.5s ease;
+  display: block;
+}
+
+.pricing-right {
+  flex: 1 1 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 300px;
+  max-width: 100%;
+}
+
+.pricing-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.pricing-tab {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 24px;
+  color: #0b0b0b;
+}
+
+.pricing-tab.pricing-active {
+  color: #5a846b;
+  text-decoration: underline;
+}
+
+.pricing-content {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.pricing-content p {
+  margin-bottom: 10px;
+  text-align: left !important;
+  color: #000;
+}
+
+.pricing-book-btn {
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #5a846b;
+  color: white;
+  cursor: pointer;
+}
+
+/* 🔁 Responsive Media Queries */
+@media (max-width: 768px) {
+  .pricing-container {
+    flex-direction: column;
+  }
+
+  .pricing-left,
+  .pricing-right {
+    flex: 1 1 100%;
+    padding: 20px;
+  }
+
+  .pricing-left img {
+    height: auto; /* Allow height to adjust on smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-tabs {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pricing-tab {
+    font-size: 16px;
+  }
+
+  .pricing-content {
+    font-size: 14px;
+  }
+
+  .pricing-book-btn {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}
+
+
+.Skin_care {
+  background-color: #697e55;
+}
+
+.skincare-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  padding: 40px 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.skincare-image-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+  padding: 10px;
+}
+
+.skincare-image-container img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.skincare-content-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.skincare-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.skincare-tab {
+  font-size: 18px;
+  color: #000000;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s;
+}
+
+.skincare-tab.skincare-active {
+  color: white;
+}
+
+.skincare-tab.skincare-active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 40%;
+  height: 2px;
+  background-color: white;
+  transform: translateX(-50%);
+}
+
+.skincare-content p {
+  font-size: 16px;
+  margin: 10px auto;
+  text-align: left;
+  color: black;
+  line-height: 1.6;
+}
+
+.skincare-content .note {
+  font-size: 14px;
+  color: #eee;
+  margin-top: 10px;
+}
+
+.skincare-book-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  background: white;
+  color: #682a6b;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.skincare-book-btn:hover {
+  background: #f1e9f1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skincare-wrapper {
+    flex-direction: column;
+  }
+
+  .skincare-tabs {
+    gap: 10px;
+  }
+
+  .skincare-tab {
+    font-size: 16px;
+  }
+
+  .skincare-content p {
+    font-size: 16px;
+  }
+
+  .skincare-book-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

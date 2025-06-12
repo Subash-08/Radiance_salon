@@ -1,0 +1,205 @@
+.our_acadamy {
+  margin-top: 2rem;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 10px 10px black;
+  border-left: none;
+  border-top: none;
+  background-color: #6A7E5F;
+}
+
+.our_acadamy h1 {
+  margin: 30px;
+  color: white;
+}
+
+.our_acadamy p {
+  font-size: 17px;
+  color: black;
+}
+
+.Our_course {
+  text-align: center;
+  margin-top: 5rem;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+  border-right: none;
+  border-bottom: none;
+  margin: 4rem;
+  background-color: #fafae5;
+}
+
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  width: 400px;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.price {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.original {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 0.6em;
+  margin-right: 10px;
+}
+
+ul {
+  text-align: left;
+  margin-top: 10px;
+  list-style: none;
+  padding-left: 0;
+}
+ul li{
+  color: #000;
+}
+
+.pricing-container li {
+  margin-bottom: 8px;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid gray;
+  width: 350px;
+  margin-left: 1rem;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+
+}
+
+.button {
+  background-color: #5e7445;
+  width: 150px;
+  text-align: center;
+  margin-left: 30%;
+  border-radius: 10px;
+  border: none;
+}
+
+p {
+  padding-top: 5px;
+}
+
+.story-section {
+  padding: 40px 20px;
+  margin-top: 3rem;
+}
+
+.story-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.image-box {
+  position: relative;
+  flex: 1 1 400px;
+  min-width: 280px;
+}
+
+.image-box img {
+  width: 90%;
+  height: 600px;
+  border: 8px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.diagonal-lines {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(-45deg,
+      transparent,
+      transparent 8px,
+      #ccc 8px,
+      #ccc 10px);
+  z-index: -1;
+}
+
+.text-box {
+  flex: 1 1 400px;
+  min-width: 280px;
+}
+
+.text-box p {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.award {
+  margin-top: 1rem;
+  background-color: #6A7E5F;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.award .head {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+
+}
+
+.award .list {
+  border-bottom: none;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+}
+
+@media (min-width: 320px) and (max-width:425px) {
+
+  li {
+    width: 250px;
+  }
+
+  .image-box img {
+    width: 100%;
+  }
+
+  .text-box p {
+    font-size: 16px;
+  }
+
+  .award .list {
+    font-size: 16px;
+  }
+}
