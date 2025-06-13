@@ -269,7 +269,7 @@
                             data-aos-duration="1000">
                         <figcaption class="bg-white p-1 m-1 p-md-5 m-md-5 col-md-5" data-aos="zoom-in"
                             data-aos-duration="2000">
-                            "At Radiance Beauty Academy, we’re not just a unisex salon in salem, we’re a place where you
+                            "At Radiance Family Unisex salon, we’re not just a unisex salon in salem, we’re a place where you
                             can unlock your true beauty potential! Whether you’re perfecting your hair, skin, nails, or
                             makeup, our expert training is designed to help you shine.”
                         </figcaption>
@@ -289,7 +289,7 @@
 
             <div class="hair-content-grid">
                 <div class="hair-image-box" data-aos="zoom-in" data-aos-duration="1200">
-                    <img src="images/hair/10001.jpg" alt="Styling Hair">
+                    <img src="img/hair/10004.jpg" alt="Styling Hair">
                 </div>
 
                 <div class="hair-text-box" data-aos="zoom-in-up" data-aos-duration="1400">
@@ -479,7 +479,7 @@
             </div>
             <!-- Slide 2: Men's Grooming -->
             <div class="carousel-item position-relative" style="min-height: 100vh;">
-                <img class="position-absolute w-100 h-100" src="images/men/10001.jpg" style="object-fit: cover;">
+                <img id="responsiveImg" class="position-absolute w-100 h-100" src="images/men/10001.jpg" style="object-fit: cover;" alt="Responsive Image">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
                         <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown"
@@ -493,7 +493,11 @@
             </div>
             <!-- Slide 3: Kids' Friendly Haircuts -->
             <div class="carousel-item position-relative" style="min-height: 100vh;">
-                <img class="position-absolute w-100 h-100" src="images/kids/10004.jpg" style="object-fit: cover;">
+                <picture>
+  <source media="(max-width: 1000px)" srcset="images/men/10001-1.jpg">
+  <img class="position-absolute w-100 h-100" src="images/men/10001.jpg" style="object-fit: cover;" alt="Responsive Image">
+</picture>
+
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
                         <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown"
@@ -532,9 +536,11 @@
         <h6 class="text-uppercase">Years of Excellence</h6>
     </div>
 </div>
+<div class="col-6">
     <div class="box text-center p-4">
-        <h3 class="display-4 text-primary" data-toggle="counter-up">500</h3>
+        <h3 class="display-4 text-primary" data-toggle="counter-up">1500</h3>
         <h6 class="text-uppercase">Bridal Makeovers</h6>
+    </div>
     </div>
 </div>
 
@@ -619,97 +625,77 @@
 
 
         <!-- Service End -->
-
 <!-- Open Hours Start -->
-<div class="container-fluid py-5">
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-lg-6" style="min-height: 500px;">
-                <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100" src="img/opening.jpg" style="object-fit: cover;" alt="Salon open hours image">
-                </div>
-            </div>
-            <div class="col-lg-6 pt-5 pb-lg-5">
-                <div class="hours-text box p-4 p-lg-5 my-lg-5">
-                    <h6 class="d-inline-block text-white text-uppercase bg-primary py-1 px-2">Open Hours</h6>
-                    <h1 class="mb-4">Where Style Meets Serenity</h1>
-                    <p>Visit us any day of the week for relaxing treatments and expert beauty care in a peaceful, family-friendly environment.</p>
-                    <ul class="list-inline">
-                        <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Monday – Friday : 9:00 AM - 9:00 PM</li>
-                         <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Saturday – Sunday : 8:00 AM - 9:00 PM</li>
-                    </ul>
-                    <a href="appointment.html" class="btn text-white bg-primary mt-2">Book Now</a>
-                </div>
-            </div>
-        </div>
+<div class="container-fluid py-5 bg-light-green open-hours">
+  <div class="container py-5">
+    <div class="text-center text-white">
+      <span class="badge bg-white text-success px-3 py-1 mb-3 fw-semibold">OPEN HOURS</span>
+      <h2 class="display-5 fw-bold mb-4">Where Style Meets Serenity</h2>
+      <p class="lead mb-4 mx-auto" style="max-width: 700px;">
+        Visit us any day of the week for relaxing treatments and expert beauty care in a peaceful, family-friendly environment.
+      </p>
+      <div class="d-flex flex-column align-items-center gap-2 mb-4">
+        <div class="h5"><i class="far fa-clock me-2"></i>Monday – Friday: <strong>9:00 AM - 9:00 PM</strong></div>
+        <div class="h5"><i class="far fa-clock me-2"></i>Saturday – Sunday: <strong>8:00 AM - 9:00 PM</strong></div>
+      </div>
+      <div class="opn-btn">
+      <a href="appointment.html" class="btn btn-success px-4 py-2">Book Now</a>
     </div>
+    </div>
+  </div>
 </div>
 <!-- Open Hours End -->
 
 
+<section id="blog" class="latest-blogs py-2 py-md-5 mt-5">
+  <div class="container-fluid">
+    <div class="row">
 
+      <!-- Blog Post 1: Skincare -->
+      <div class="col-md-4 pb-5 d-flex flex-column">
+        <div class="post-content mb-3 order-1">
+          <div class="meta-tags text-uppercase text-gray d-flex gap-2 fs-6 mb-2 align-items-center">
+            <span class="meta-category"><a href="#">Skincare</a></span>
+          </div>
+          <h3 class="post-title mb-2"><a href="about.html">Rejuvenate with Our Signature Facials</a></h3>
+          <p>Experience deep cleansing, exfoliation, and hydration with our customized facial treatments designed to bring out your natural glow. Perfect for all skin types and concerns.</p>
+        </div>
+        <div class="post-thumbnail order-2">
+          <img src="images/hair/Untitled design.png" alt="Facial Treatment" class="img-fluid">
+        </div>
+      </div>
 
+      <!-- Blog Post 2: Haircare (reversed on desktop) -->
+      <div class="col-md-4 pb-5 d-flex flex-column flex-md-column-reverse">
+        <div class="post-content mb-3 order-2 order-md-1">
+          <div class="meta-tags text-uppercase text-gray d-flex gap-2 fs-6 mb-2 align-items-center">
+            <span class="meta-category"><a href="#">Haircare</a></span>
+          </div>
+          <h3 class="post-title mb-2"><a href="about.html">Behind the Chair: Latest Salon Hair Trends</a></h3>
+          <p>Whether you're going for a bold new look or a subtle refresh, our expert stylists are bringing runway-ready styles to everyday beauty. Step in for a makeover that speaks your style.</p>
+        </div>
+        <div class="post-thumbnail order-1 order-md-2">
+          <img src="images/post-thumbnail-2.jpg" alt="Hair Styling" class="img-fluid">
+        </div>
+      </div>
 
-        <section id="blog" class="latest-blogs py-2 py-md-5 mt-5">
-            <div class="container-fluid">
-                <div class="row">
+      <!-- Blog Post 3: Beauty Tips -->
+      <div class="col-md-4 pb-5 d-flex flex-column">
+        <div class="post-content mb-3 order-1">
+          <div class="meta-tags text-uppercase text-gray d-flex gap-2 fs-6 mb-2 align-items-center">
+            <span class="meta-category"><a href="#">Beauty Tips</a></span>
+          </div>
+          <h3 class="post-title mb-2"><a href="about.html">DIY Spa Moments: Keep Your Glow Between Visits</a></h3>
+          <p>Take the salon home with our top DIY routines. From nourishing hair masks to calming face treatments, learn how to pamper yourself with ease and keep that post-salon radiance alive.</p>
+        </div>
+        <div class="post-thumbnail order-2">
+          <img src="images/post-thumbnail-3.jpg" alt="Beauty Secrets" class="img-fluid">
+        </div>
+      </div>
 
-                    <!-- Blog Post 1 -->
-                    <div class="col-md-4 pb-5">
-                        <div class="post-content mb-3">
-                            <div class="meta-tags text-uppercase text-gray d-flex gap-2 fs-6 mb-2 align-items-center">
-
-                                <span class="meta-category"><a href="#">Skincare</a></span>
-                            </div>
-                            <h3 class="post-title mb-2"><a href="about.html">Top 5 Facial Treatments for Glowing
-                                    Skin</a></h3>
-                            <p>Discover the most effective facial treatments to rejuvenate your skin and give you that
-                                radiant glow. Perfect for all skin types and ideal for special occasions.</p>
-                        </div>
-                        <div class="post-thumbnail">
-                            <img src="images/post-thumbnail-1.jpg" alt="Facial Treatment" class="img-fluid">
-                        </div>
-                    </div>
-
-                    <!-- Blog Post 2 -->
-                    <div class="col-md-4 pb-5">
-                        <div class="post-thumbnail">
-                            <img src="images/post-thumbnail-2.jpg" alt="Hair Styling" class="img-fluid">
-                        </div>
-                        <div class="post-content mb-3">
-                            <div
-                                class="meta-tags text-uppercase text-gray d-flex gap-2 fs-6 mb-2 mt-3 align-items-center">
-
-                                <span class="meta-category"><a href="#">Haircare</a></span>
-                            </div>
-                            <h3 class="post-title mb-2"><a href="about.html">This Season’s Trending Hair
-                                    Styles</a></h3>
-                            <p>From beach waves to sleek bobs, explore the hottest <a href="hair-care.html">hair</a>
-                                styling trends this season and
-                                find the perfect look that fits your vibe.</p>
-                        </div>
-                    </div>
-
-                    <!-- Blog Post 3 -->
-                    <div class="col-md-4 pb-5">
-                        <div class="post-content mb-3">
-                            <div class="meta-tags text-uppercase text-gray d-flex gap-2 fs-6 mb-2 align-items-center">
-
-                                <span class="meta-category"><a href="#">Beauty Tips</a></span>
-                            </div>
-                            <h3 class="post-title mb-2"><a href="about.html">Salon Secrets: How to Maintain Your
-                                    Glow at Home</a></h3>
-                            <p>Learn pro tips from our beauticians to maintain that post-salon glow. Easy DIY skincare
-                                routines and product suggestions included.</p>
-                        </div>
-                        <div class="post-thumbnail">
-                            <img src="images/post-thumbnail-3.jpg" alt="Beauty Secrets" class="img-fluid">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
+    </div>
+  </div>
+</section>
 
         <!-- Pricing Start -->
         <!-- <div class="container-fluid bg-pricing" style="margin: 90px 0;">
@@ -791,63 +777,58 @@
         </div> -->
         <!-- Pricing End -->
 
+<!-- Testimonial Start -->
+<div class="container-fluid py-5 mb-5">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h3 class="d-inline-block  box py-1 px-2" style="color: aliceblue;">Testimonial</h3>
+                <h1 class="mb-4">What Our Clients Say!</h1>
+                <div class="owl-carousel testimonial-carousel">
 
-        <!-- Testimonial Start -->
-        <div class="container-fluid py-5 mb-5">
-            <div class="container py-5">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 pb-5 pb-lg-0">
-                        <img class="img-fluid w-100" src="img/testimonial.jpg" alt="">
-                    </div>
-                    <div class="col-lg-6">
-                        <h6 class="d-inline-block text-primary text-uppercase box py-1 px-2">Testimonial</h6>
-                        <h1 class="mb-4">What Our Clients Say!</h1>
-                        <div class="owl-carousel testimonial-carousel">
-                            <div class="position-relative">
-                                <i class="fa fa-3x fa-quote-right text-primary position-absolute"
-                                    style="top: -6px; right: 0;"></i>
-                                <div class="d-flex align-items-center mb-3">
-                                    <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg"
-                                        style="width: 60px; height: 60px;" alt="">
-                                    <div class="ml-3">
-                                        <h6 class="text-uppercase">SIVAGNANAM A</h6>
-                                        
-                                    </div>
-                                </div>
-                                <p class="m-0">I had an amazing experience at Radiance Salon! The staff were friendly and professional, and the service was top-notch. I highly recommend it! Love the ambiance and the quality of service Definitely my go-to salon from now on!🥰🥰🥰</p>
-                            </div>
-                            <div class="position-relative">
-                                <i class="fa fa-3x fa-quote-right text-primary position-absolute"
-                                    style="top: -6px; right: 0;"></i>
-                                <div class="d-flex align-items-center mb-3">
-                                    <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg"
-                                        style="width: 60px; height: 60px;" alt="">
-                                    <div class="ml-3">
-                                        <h6 class="text-uppercase">sumathy's home & kitchens</h6>
-                                        
-                                    </div>
-                                </div>
-                                <p class="m-0">Very good & excellent service...very pleasant admosphere and Shruthi did my pedicure was amazing...she made sure I'm comfortable I left feeling relaxed and pampered...Thank you "RADIANCE" for your wonderful service and hospitality.</p>
-                            </div>
-                            <div class="position-relative">
-                                <i class="fa fa-3x fa-quote-right text-primary position-absolute"
-                                    style="top: -6px; right: 0;"></i>
-                                <div class="d-flex align-items-center mb-3">
-                                    <img class="img-fluid rounded-circle" src="img/testimonial-3.jpg"
-                                        style="width: 60px; height: 60px;" alt="">
-                                    <div class="ml-3">
-                                        <h6 class="text-uppercase">Deepeika B</h6>
-                                        
-                                    </div>
-                                </div>
-                                <p class="m-0">I took up dead sea facial and spa pedicure.Both the services were too good and loved the service by Shruthi. I would highly recommend this salon</p>
+                    <!-- Testimonial 1 -->
+                    <div class="position-relative">
+                        <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
+                        <div class="d-flex align-items-center mb-3">
+                            <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;" alt="">
+                            <div class="ml-3">
+                                <h6 class="text-uppercase">SIVAGNANAM A</h6>
                             </div>
                         </div>
+                        <p class="m-0">I had an amazing experience at Radiance Salon! The staff were friendly and professional, and the service was top-notch. I highly recommend it! Love the ambiance and the quality of service. Definitely my go-to salon from now on! 🥰🥰🥰</p>
                     </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="position-relative">
+                        <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
+                        <div class="d-flex align-items-center mb-3">
+                            <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;" alt="">
+                            <div class="ml-3">
+                                <h6 class="text-uppercase">sumathy's home & kitchens</h6>
+                            </div>
+                        </div>
+                        <p class="m-0">Very good & excellent service... very pleasant atmosphere and Shruthi did my pedicure was amazing. She made sure I'm comfortable. I left feeling relaxed and pampered. Thank you "RADIANCE" for your wonderful service and hospitality.</p>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="position-relative">
+                        <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
+                        <div class="d-flex align-items-center mb-3">
+                            <img class="img-fluid rounded-circle" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;" alt="">
+                            <div class="ml-3">
+                                <h6 class="text-uppercase">Deepeika B</h6>
+                            </div>
+                        </div>
+                        <p class="m-0">I took up Dead Sea facial and spa pedicure. Both the services were too good and loved the service by Shruthi. I would highly recommend this salon.</p>
+                    </div>
+
                 </div>
             </div>
         </div>
-        <!-- Testimonial End -->
+    </div>
+</div>
+<!-- Testimonial End -->
+
 
 
         <!-- Footer start -->
@@ -900,7 +881,7 @@
                                     <a href="about.html" class="item-anchor">About</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="franchise.html" class="item-anchor">Franchise</a>
+                                    <a href="Franchise.html" class="item-anchor">Franchise</a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="academy.html" class="item-anchor">Academy</a>
@@ -928,7 +909,7 @@
                                     <a href="nail-care.html" class="item-anchor">Nail Care</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="bridal.html" class="item-anchor">Bridal</a>
+                                    <a href="Bridal.html" class="item-anchor">Bridal</a>
                                 </li>
                             </ul>
                         </div>
@@ -951,7 +932,7 @@
                 <div class="border-top py-4">
                     <div class="row">
                         <div class="col-md-6">
-                            <p>All Rights Reserved - <a href="https://nkmoderntechnology.com/"
+                            <p>Developed by - <a href="https://nkmoderntechnology.com/"
                                     style="color: rgb(97, 171, 146);">NK Modern Technology</a>
                             </p>
                         </div>
@@ -966,10 +947,10 @@
 
         <!-- Back to Top -->
         <!-- <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a> -->
-        <a href="tel:8056969805" class="call-link" aria-label="Call Us">
+        <a href="tel:9095859707" class="call-link" aria-label="Call Us">
             <img src="img/call.jpg" alt="Call" />
         </a>
-        <a href="https://wa.me/8056969805" target="_blank" class="whatsapp-link" aria-label="Chat on WhatsApp">
+        <a href="https://wa.me/9095859707" target="_blank" class="whatsapp-link" aria-label="Chat on WhatsApp">
             <img src="img/whatsapp-logo-1.png" alt="WhatsApp" />
         </a>
         <!-- AOS CSS -->
@@ -1117,9 +1098,7 @@
                   <p>${slide.headlineFirstLine}</p>
                   <p>${slide.headlineSecondLine}</p>
                 </div>
-                <div class="slide-rect-filter">
-                  <div class="slide-rect" style="border-image-source: url(${slide.rectImg});"></div>
-                </div>
+                
                 <div class="slide-content">
                   <h1 class="slide-content-text">
                     <p>${slide.headlineFirstLine}</p>
@@ -1197,7 +1176,6 @@
             render();
             setupSwipe();
         </script>
-
 
         <script src="js/active.js"></script>
         <!-- Active JS -->

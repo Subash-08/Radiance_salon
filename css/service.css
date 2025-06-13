@@ -60,6 +60,9 @@
       flex-direction: column;
       text-align: left;
     }
+      .reverse{
+    flex-direction: column-reverse !important;
+  }
   
     .text-content,
     .image-content {

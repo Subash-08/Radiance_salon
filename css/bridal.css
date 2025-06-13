@@ -3,7 +3,7 @@
   width: 100%;
   max-height: 100vh;
   flex-wrap: wrap;
-  background-image: url(/images/1.jpg);
+  background-image: url(/images/radiaance\ 1920\ x\ 500.png);
   background-repeat: no-repeat;
 }
 
@@ -330,6 +330,11 @@ button a{
   .bridal-services h1 {
     font-size: 36px;
   }
+  .makeup {
+  
+    background: none;
+    background-color: #6f7b63;
+  }
 }
 
 /* Mobile Responsive */
@@ -371,9 +376,7 @@ button a{
 }
 
 @media (max-width: 700px) {
-  .container {
-    padding: 22px 2vw 36px;
-  }
+ 
 
   .faq-title {
     font-size: 2.2rem;
@@ -413,9 +416,7 @@ button a{
 
 @media (min-width: 320px) and (max-width:425px) {
 
-  .makeup {
-    background-image: none;
-  }
+
 
   .form-section {
     width: 100%;
@@ -508,9 +509,11 @@ button a{
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;
-  }
+    flex-direction: column !important;
+    padding: 22px 2vw 36px;
 
+  }
+ 
   .form-section {
     padding: 20px;
   }
