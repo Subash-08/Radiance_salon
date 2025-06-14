@@ -333,7 +333,7 @@ button a{
   .makeup {
   
     background: none;
-    background-color: #6f7b63;
+    background-color: #6f7b63 !important;
   }
 }
 
@@ -420,7 +420,7 @@ button a{
 
   .form-section {
     width: 100%;
-    background-color: #c2e766;
+    background-color: #6f7b63;
     margin-left: 0px;
   }
 

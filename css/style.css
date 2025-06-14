@@ -149,7 +149,7 @@ sup {
 }
 
 a {
-  color: #A8D5BA;
+  color: #6f7b63;
   text-decoration: none;
   background-color: transparent;
 }
@@ -4631,7 +4631,7 @@ input[type="button"].btn-block {
 .badge {
   display: inline-block;
   padding: 0.25em 0.4em;
-  font-size: 75%;
+  font-size: 22px;
   font-weight: 700;
   line-height: 1;
   text-align: center;
@@ -6537,7 +6537,9 @@ button.bg-dark:focus {
 .flex-column {
   flex-direction: column !important;
 }
-
+.reverse {
+  flex-direction: column-reverse !important;
+}
 .flex-row-reverse {
   flex-direction: row-reverse !important;
 }
@@ -9285,7 +9287,7 @@ a.text-danger:hover, a.text-danger:focus {
 }
 
 .text-light {
-  color: #A8D5BA; !important;
+  color: #A8D5BA !important;
 }
 
 a.text-light:hover, a.text-light:focus {

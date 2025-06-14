@@ -56,9 +56,11 @@
     background-color: #0e0e0e;
     font-size: 14px;
 }
-
+.text-color{
+  color: rgb(213, 213, 213);
+}
 .top-bar .btn-warning {
-    background-color: #5e7445;
+    background-color: #6f7b63;
     border: none;
 }
 .top-bar i:hover{
@@ -80,11 +82,7 @@
 .btn-dark i {
     font-size: 18px;
 }
-.tob_bar{
-  width: 70%;
-  margin: auto;
-  max-width: 1500px;
-}
+
 .navbar {
     border-bottom: 2px solid #e0e0e0; /* Light grey border */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Optional subtle shadow */
@@ -92,12 +90,28 @@
     
 }
 @media (max-width: 800px) {
-  .top-bar{
+  .ratecard{
     display: none;
+  }
+.tob_bar{
+    width: 85% !important;
+    margin: auto;
   }
 
 }
+@media (max-width: 500px) {
 
+.tob_bar{
+    width: 95% !important;
+    margin: auto;
+  }
+
+}
+.tob_bar{
+  width: 70%;
+  margin: auto;
+  max-width: 1500px;
+}
 .btn-book-now {
   background-color: #000;
   color: #fff;
@@ -2169,5 +2183,8 @@ body {
   margin-top: 100px;
 }
 .opn-btn{
-  padding: 30px 50px;
+  padding: 20px 50px;
+}
+.black{
+  color: #000;
 }

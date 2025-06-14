@@ -53,17 +53,27 @@
     object-fit: cover; /* Keeps proportions and fills the container */
     border-radius: 5px;
   }
-  
+  /* Base styles */
+.section,
+.toggle-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+ .reverse {
+    flex-direction: row !important;
+  }
   /* Responsive for mobile */
   @media (max-width: 768px) {
-    .section {
-      flex-direction: column;
-      text-align: left;
-    }
-      .reverse{
+    .section,
+  .toggle-content {
+    flex-direction: column;
+    text-align: left;
+  }
+ .toggle-content.reverse {
     flex-direction: column-reverse !important;
   }
-  
+
     .text-content,
     .image-content {
       height: auto;
