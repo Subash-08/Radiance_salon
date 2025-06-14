@@ -68,6 +68,7 @@
     .section,
   .toggle-content {
     flex-direction: column;
+  
     text-align: left;
   }
  .toggle-content.reverse {
