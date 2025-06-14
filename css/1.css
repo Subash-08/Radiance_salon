@@ -102,7 +102,7 @@
 @media (max-width: 500px) {
 
 .tob_bar{
-    width: 95% !important;
+    width: 98% !important;
     margin: auto;
   }
 
@@ -2187,4 +2187,7 @@ body {
 }
 .black{
   color: #000;
+}
+.col-6{
+  padding-right: 0;
 }
