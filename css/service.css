@@ -48,7 +48,7 @@
   }
   
   .image-content img {
-    width: 100%;
+    width: 90% !important;
     height: 100%;
     object-fit: cover; /* Keeps proportions and fills the container */
     border-radius: 5px;
@@ -71,7 +71,7 @@
   
     text-align: left;
   }
- .toggle-content.reverse {
+.reverse {
     flex-direction: column-reverse !important;
   }
 
