@@ -480,7 +480,7 @@
 
 .hair-salon-bg{
 
-  background: url(/img/Mullet-transparent-bg-01.png) no-repeat;
+  /* background: url(/img/Mullet-transparent-bg-01.png) no-repeat; */
   background-color: #ced7cf;
   margin-top: 80px;
 }
@@ -514,7 +514,7 @@
 
 .hair-header-text em {
   font-style: italic;
-  color: #7aa67e;
+  color: #5a7b5d;
   font-weight: bold;
 }
 
@@ -538,9 +538,9 @@
   margin: auto;
 }
 .hair-text-box h2 {
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 2px;
-  color: #7aa67e;
+  color: #5a7b5d;
   margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: 800;
@@ -737,6 +737,14 @@
   transition: all 0.3s ease;
 }
 
+.plans-item .text-block {
+  width: 50%;
+}
+
+.plans-item h3, .plans-item p {
+  margin: 0;
+}
+
 .plans-item:hover {
   background: #6f7b63;
   color: white;
@@ -791,6 +799,7 @@
 
 .plans-item {
   cursor: pointer;
+
 }
 
 .plans-item:hover {

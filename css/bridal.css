@@ -58,10 +58,10 @@ button {
 }
 
 button:hover {
-  background-color: #d8f3a0;
+  background-color: #ffffff;
 }
 button a{
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .container {
   position: relative;
@@ -255,8 +255,8 @@ button a{
 }
 
 .button button:hover {
-  background-color: #d8f3a0;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
 /* bridal_service */
@@ -308,7 +308,7 @@ button a{
 .book-btn {
   padding: 10px 25px;
   background: transparent;
-  border: 2px solid #bddf86;
+  border: 2px solid #6f7b63;
   color: #fcfdf9;
   border-radius: 25px;
   font-weight: 600;
@@ -317,7 +317,7 @@ button a{
 }
 
 .book-btn:hover {
-  background: #bddf86;
+  background: #6f7b63;
   color: #fff;
 }
 
@@ -359,7 +359,7 @@ button a{
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 5rem;
-  color: #c2e766;
+  color: #ffffff;
   letter-spacing: 0.5px;
 }
 
@@ -367,12 +367,13 @@ button a{
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-size: 1rem;
-  color: white;
+  color: rgb(0, 0, 0);
   line-height: 1.6;
 }
 
 .Trail .Trail_img img {
   width: 100%;
+  border-radius: 20px;
 }
 
 @media (max-width: 700px) {
@@ -430,6 +431,9 @@ button a{
 
   .content p {
     font-size: 16px;
+    text-align: left;
+    margin: 15px;
+    color: black !important;
   }
 
   .slider {
