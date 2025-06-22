@@ -57,7 +57,7 @@
     font-size: 14px;
 }
 .text-color{
-  color: rgb(213, 213, 213);
+  color: rgb(231, 231, 231);
 }
 .top-bar .btn-warning {
     background-color: #6f7b63;
@@ -71,18 +71,27 @@
 }
 
 .nav-logo {
-    width: 190px;
+    width: 250px;
     /* margin-left: 150px; */
 }
 .navbar-nav .nav-link {
     margin: 0 10px;
     font-weight: 600;
 }
-
+.lb-nav a.lb-prev{
+  opacity: 1 !important;
+}
+.lb-nav a.lb-next{
+  opacity: 1 !important;
+}
 .btn-dark i {
     font-size: 18px;
 }
-
+.ratecard-btn{
+  background-color: #6f7b63 !important;
+  padding: 5px 12px;
+  border-radius: 3px;
+}
 .navbar {
     border-bottom: 2px solid #e0e0e0; /* Light grey border */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Optional subtle shadow */
@@ -503,7 +512,7 @@
 .hair-small-title {
   letter-spacing: 2px;
   font-size: 12px;
-  color: #7aa67e;
+  color: #5a7b5d;
   margin-bottom: 10px;
 }
 
@@ -611,7 +620,7 @@
 /* ----------------- RESPONSIVE ----------------- */
 
 /* Tablet devices (768px and smaller) */
-@media (max-width: 768px) {
+@media (max-width: 860px) {
   .hair-header-text h1 {
       font-size: 2rem;
   }
@@ -1045,7 +1054,7 @@
   display: block;
 }
 .logo{
-  width: 300px !important;
+  width: 350px !important;
   max-width: 100%;
   display: block;
 }
@@ -1056,7 +1065,9 @@
   background-color: white !important;
   z-index: 10001;
 }
-
+.vis{
+  display: none;
+}
 
 
 
@@ -1193,7 +1204,7 @@ color: #000;
 }
 
 .header-div{
-  height: 500px !important;
+  height: 600px !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2148,11 +2159,12 @@ body {
     margin-top: 70px;
     margin-bottom: 50px;
   }
-   .bg-jumbotron-franchise {
-    background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)), url(../images/home/Radiance\ 1920\ X\ 1080.png_Franchaise.png), no-repeat center center;
-    background-size: cover;
-    height: 600px !important;
-  }
+.bg-jumbotron-franchise {
+  background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)),
+              url("../images/home/Radiance 1920 X 1080.png_Franchaise.png") no-repeat center center;
+  background-size: cover;
+}
+
      .bg-jumbotron-acadamy {
     background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)), url(../images/home/Radiance\ 1920\ X\ 1080.png\ academy.png), no-repeat center center;
     background-size: cover;
