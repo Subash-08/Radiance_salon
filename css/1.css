@@ -90,7 +90,12 @@
 .ratecard-btn{
   background-color: #6f7b63 !important;
   padding: 5px 12px;
+  color: white;
   border-radius: 3px;
+}
+.ratecard-btn:hover{
+  color:white;
+  border: none;
 }
 .navbar {
     border-bottom: 2px solid #e0e0e0; /* Light grey border */

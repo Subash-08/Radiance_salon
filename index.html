@@ -19,7 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
     <!-- Font Awesome -->
     <link
@@ -165,21 +165,54 @@
     </nav>
 
     <!-- Navbar End -->
-        
-                   
+
     <div class="salon-promo">
       <div class="salon-text">
-        <a href="images/rate_card/w_3.jpg" data-lightbox="project" class="btn btn-sm text-white ratecard-btn">          
+        <a
+          href="images/rate_card/w_3.jpg"
+          data-lightbox="men"
+          class="btn btn-sm text-white ratecard-btn"
+        >
           Ratecard
         </a>
-         <a href="images/rate_card/101.jpg" data-lightbox="project" class="vis"></a>    
-         <a href="images/rate_card/102.jpg" data-lightbox="project" class="vis"></a>    
-        <a href="images/rate_card/103.jpg" data-lightbox="project" class="vis"></a>    
-         <a href="images/rate_card/104.jpg" data-lightbox="project" class="vis"></a>    
-        <a href="images/rate_card/105.jpg" data-lightbox="project" class="vis"></a>    
-         <a href="images/rate_card/106.jpg" data-lightbox="project" class="vis"></a>    
-        <a href="images/rate_card/107.jpg" data-lightbox="project" class="vis"></a>    
-         <a href="images/rate_card/108.jpg" data-lightbox="project" class="vis"></a>    
+
+        <!-- Category Toggle Buttons -->
+        <div
+          id="category-buttons"
+          style="
+            display: none;
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 99999;
+          "
+        >
+          <button class="btn ratecard-btn" onclick="showCategory('men')">
+            Men
+          </button>
+          <button class="btn ratecard-btn" onclick="showCategory('women')">
+            Women
+          </button>
+        </div>
+
+        <!-- Hidden Lightbox links grouped by category -->
+        <!-- Men Category -->
+        <div style="display: none" id="lightbox-men">
+          <a href="images/rate_card/106.jpg" data-lightbox="men"></a>
+          <a href="images/rate_card/107.jpg" data-lightbox="men"></a>
+          <a href="images/rate_card/108.jpg" data-lightbox="men"></a>
+        </div>
+
+        <!-- Women Category -->
+        <div style="display: none" id="lightbox-women">
+          <a href="images/rate_card/101.jpg" data-lightbox="women"></a>
+          <a href="images/rate_card/102.jpg" data-lightbox="women"></a>
+          <a href="images/rate_card/103.jpg" data-lightbox="women"></a>
+          <a href="images/rate_card/104.jpg" data-lightbox="women"></a>
+          <a href="images/rate_card/105.jpg" data-lightbox="women"></a>
+        </div>
+
         <h1 class="mt-4" data-aos="zoom-in" data-aos-duration="3000">
           Beauty is an Investment, Not an Expense.
         </h1>
@@ -748,7 +781,7 @@
                   Family Salon
                 </h6>
                 <h3 class="display-3 text-capitalize text-white mb-3">
-                  Fun & Stylish for Kids
+                  Fun & Stylish Haircuts for Kids!
                 </h3>
                 <p class="mx-md-5 px-5 text-white">
                   "Make haircut time enjoyable with our kid-friendly salon
@@ -830,7 +863,7 @@
               Trendy cuts and styles for men, women & kids.
             </p>
             <div class="w-100 bg-white text-center p-4">
-              <a class="btn btn-primary" href="contact">Book Now</a>
+              <a class="btn btn-primary" href="appointment">Book Now</a>
             </div>
           </div>
         </div>
@@ -846,7 +879,7 @@
               Clean trims and stylish beard shaping for men.
             </p>
             <div class="w-100 bg-white text-center p-4">
-              <a class="btn btn-primary" href="contact">Book Now</a>
+              <a class="btn btn-primary" href="appointment">Book Now</a>
             </div>
           </div>
         </div>
@@ -862,7 +895,7 @@
               Glow-enhancing facials for all skin types.
             </p>
             <div class="w-100 bg-white text-center p-4">
-              <a class="btn btn-primary" href="contact">Book Now</a>
+              <a class="btn btn-primary" href="appointment">Book Now</a>
             </div>
           </div>
         </div>
@@ -878,7 +911,7 @@
               Vibrant and natural shades for every look.
             </p>
             <div class="w-100 bg-white text-center p-4">
-              <a class="btn btn-primary" href="contact">Book Now</a>
+              <a class="btn btn-primary" href="appointment">Book Now</a>
             </div>
           </div>
         </div>
@@ -894,7 +927,7 @@
               Fun and gentle styling for little ones.
             </p>
             <div class="w-100 bg-white text-center p-4">
-              <a class="btn btn-primary" href="contact">Book Now</a>
+              <a class="btn btn-primary" href="appointment">Book Now</a>
             </div>
           </div>
         </div>
@@ -910,7 +943,7 @@
               Flawless looks for your special day.
             </p>
             <div class="w-100 bg-white text-center p-4">
-              <a class="btn btn-primary" href="contact">Book Now</a>
+              <a class="btn btn-primary" href="appointment">Book Now</a>
             </div>
           </div>
         </div>
@@ -1190,6 +1223,7 @@
                   <a
                     href="https://www.facebook.com/radiancebridalstudio"
                     class="text-secondary"
+                    target="_blank"
                   >
                     <i class="bi bi-facebook" style="font-size: 24px"></i>
                   </a>
@@ -1197,7 +1231,7 @@
                 <li>
                   <a
                     href="https://www.instagram.com/radiance_unisexsalon/?hl=en"
-                    class="text-secondary"
+                    class="text-secondary" target="_blank"
                   >
                     <i class="bi bi-instagram" style="font-size: 24px"></i>
                     <!-- New Twitter (X) logo -->
@@ -1206,7 +1240,7 @@
                 <li>
                   <a
                     href="https://www.youtube.com/@rekharadianceunisexsaloon"
-                    class="text-secondary"
+                    class="text-secondary" target="_blank"
                   >
                     <i class="bi bi-youtube" style="font-size: 24px"></i>
                   </a>
@@ -1214,7 +1248,7 @@
                 <li>
                   <a
                     href="https://www.linkedin.com/in/rekha-k-1868a6275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                    class="text-secondary"
+                    class="text-secondary" target="_blank"
                   >
                     <i class="bi bi-linkedin" style="font-size: 24px"></i>
                   </a>
@@ -1573,6 +1607,50 @@
       // Initialize
       render();
       setupSwipe();
+    </script>
+
+    <script>
+      function showCategory(category) {
+        const selector =
+          category === "men" ? "#lightbox-men a" : "#lightbox-women a";
+        const firstImage = document.querySelector(selector);
+        if (firstImage) firstImage.click();
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const buttons = document.getElementById("category-buttons");
+
+        const observer = new MutationObserver((mutationsList) => {
+          mutationsList.forEach(() => {
+            const overlay = document.querySelector(".lightboxOverlay");
+
+            if (overlay && getComputedStyle(overlay).display === "block") {
+              buttons.style.display = "block";
+
+              // Also observe Lightbox close button click to instantly hide
+              const closeBtn = document.querySelector(".lightbox .lb-close");
+              if (closeBtn) {
+                closeBtn.addEventListener(
+                  "click",
+                  () => {
+                    buttons.style.display = "none";
+                  },
+                  { once: true }
+                ); // run once
+              }
+            } else {
+              buttons.style.display = "none";
+            }
+          });
+        });
+
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true,
+          attributes: true,
+          attributeFilter: ["style", "class"],
+        });
+      });
     </script>
 
     <script src="js/active.js"></script>

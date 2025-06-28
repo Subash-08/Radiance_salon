@@ -4,7 +4,7 @@
   border: 1px solid gray;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 10px 10px black;
+  /* box-shadow: 10px 10px black; */
   border-left: none;
   border-top: none;
   background-color: #6A7E5F;
@@ -99,7 +99,7 @@ ul li{
 }
 
 .button {
-  background-color: #5e7445;
+  background-color: #6f7b63;
   width: 150px;
   text-align: center;
   margin-left: 30%;

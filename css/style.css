@@ -2317,7 +2317,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #757575;
+  color: #6f7b63;
   text-align: center;
   vertical-align: middle;
   user-select: none;
@@ -2343,7 +2343,7 @@ textarea.form-control {
 
 .btn:focus, .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(249, 163, 146, 0.25);
+  /* box-shadow: 0 0 0 0.2rem rgba(249, 163, 146, 0.25); */
 }
 
 .btn.disabled, .btn:disabled {
