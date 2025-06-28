@@ -1609,49 +1609,52 @@
       setupSwipe();
     </script>
 
-    <script>
-      function showCategory(category) {
-        const selector =
-          category === "men" ? "#lightbox-men a" : "#lightbox-women a";
-        const firstImage = document.querySelector(selector);
-        if (firstImage) firstImage.click();
-      }
+   <script>
+  function showCategory(category) {
+    const selector =
+      category === "men" ? "#lightbox-men a" : "#lightbox-women a";
+    const firstImage = document.querySelector(selector);
+    if (firstImage) firstImage.click();
+  }
 
-      document.addEventListener("DOMContentLoaded", () => {
-        const buttons = document.getElementById("category-buttons");
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.getElementById("category-buttons");
+    let closeBtnAttached = false; // Prevent multiple listeners
 
-        const observer = new MutationObserver((mutationsList) => {
-          mutationsList.forEach(() => {
-            const overlay = document.querySelector(".lightboxOverlay");
+    const observer = new MutationObserver(() => {
+      const overlay = document.querySelector(".lightboxOverlay");
 
-            if (overlay && getComputedStyle(overlay).display === "block") {
-              buttons.style.display = "block";
+      if (overlay && getComputedStyle(overlay).display === "block") {
+        buttons.style.display = "block";
 
-              // Also observe Lightbox close button click to instantly hide
-              const closeBtn = document.querySelector(".lightbox .lb-close");
-              if (closeBtn) {
-                closeBtn.addEventListener(
-                  "click",
-                  () => {
-                    buttons.style.display = "none";
-                  },
-                  { once: true }
-                ); // run once
-              }
-            } else {
+        const closeBtn = document.querySelector(".lightbox .lb-close");
+        if (closeBtn && !closeBtnAttached) {
+          closeBtnAttached = true;
+
+          closeBtn.addEventListener(
+            "click",
+            () => {
               buttons.style.display = "none";
-            }
-          });
-        });
+              closeBtnAttached = false; // reset flag after closing
+            },
+            { once: true }
+          );
+        }
+      } else {
+        buttons.style.display = "none";
+        closeBtnAttached = false; // reset in case of external close
+      }
+    });
 
-        observer.observe(document.body, {
-          childList: true,
-          subtree: true,
-          attributes: true,
-          attributeFilter: ["style", "class"],
-        });
-      });
-    </script>
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ["style", "class"],
+    });
+  });
+</script>
+
 
     <script src="js/active.js"></script>
     <!-- Active JS -->
