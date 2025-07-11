@@ -81,9 +81,9 @@ button a{
 
 .content h1 {
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 900;
   font-style: italic 0;
-  color: #6f7b63; 
+  color: #66705b; 
   font-size: 36px;
 }
 
@@ -136,7 +136,6 @@ button a{
   margin: 150px auto;
   margin-top: 50px;
 }
-
 .slider .slide .item {
   width: 200px;
   height: 300px;
@@ -145,10 +144,29 @@ button a{
   transform: translate(0, -50%);
   border-radius: 20px;
   box-shadow: 0 30px 50px #505050;
-  background-position: 50% 50%;
+  background-position: center;
   background-size: cover;
   display: inline-block;
   transition: 0.5s;
+  overflow: hidden;
+}
+
+/* ADD THIS: dark overlay on background image */
+.slider .slide .item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity here */
+  border-radius: 20px;
+  z-index: 0;
+}
+
+/* Make sure content is on top of the overlay */
+.slider .slide .item .cont {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  padding: 20px;
 }
 
 .slide .item:nth-child(1),
@@ -422,7 +440,7 @@ button a{
   }
 }
 
-@media (min-width: 320px) and (max-width:766px) {
+@media (min-width: 250px) and (max-width:766px) {
 
 
 
@@ -452,6 +470,7 @@ button a{
   .item .cont {
     width: 45%;
     margin-left: -40px;
+      padding: 5px !important;
   }
 
   .item .cont .name {

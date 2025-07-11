@@ -127,12 +127,14 @@ p {
 
 .image-box {
   position: relative;
-  flex: 1 1 400px;
+  /* flex: 1 1 400px; */
+  margin: auto;
   min-width: 280px;
 }
 
 .image-box img {
   width: 90%;
+  margin: auto;
   height: 600px;
   border: 8px solid white;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -158,7 +160,7 @@ p {
 }
 
 .text-box p {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 1rem;
   color: #333;
   line-height: 1.6;

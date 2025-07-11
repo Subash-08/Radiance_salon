@@ -1,6 +1,4 @@
 
-
-
 /* Preloader */
 #preloader {
   position: fixed;
@@ -89,9 +87,19 @@
 }
 .ratecard-btn{
   background-color: #6f7b63 !important;
-  padding: 5px 12px;
+
+  padding: 7px 12px;
   color: white;
   border-radius: 3px;
+}
+.ratecard-outter{
+  background-color: #6f7b63 !important;
+  width: 200px;
+  padding: 10px 25px;
+  font-weight: bold !important;
+  color: white;
+  border-radius: 3px;
+  font-size: 19px;
 }
 .ratecard-btn:hover{
   color:white;
@@ -554,14 +562,21 @@
 .hair-text-box h2 {
   font-size: 18px;
   letter-spacing: 2px;
+  color: #68775a;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.hair-heading {
+  font-size: 22px;
+  letter-spacing: 2px;
   color: #5a7b5d;
   margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: 800;
 }
-
 .hair-text-box h3 {
-  font-size: 42px;
+  font-size: 38px;
   margin-bottom: 15px;
   font-weight: 800;
 }
@@ -575,6 +590,7 @@
 .hair-text-box ul {
   margin-bottom: 20px;
   color: black;
+  padding-left: 10px;
 }
 
 .hair-text-box ul li {
@@ -597,6 +613,7 @@
   width: 80%;
   display: flex;
   gap: 5px;
+  padding-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -1511,7 +1528,7 @@ button svg {
 }
 
 .salon-text h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #333;
   margin-bottom: 20px;
 }
@@ -1539,9 +1556,10 @@ button svg {
   justify-content: center;
   align-items: flex-end;
   min-height: 500px;
+  width: 50%;
 }
 
-.salon-image::before {
+/* .salon-image::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1550,14 +1568,16 @@ button svg {
   background-color: #778569;
   border-radius: 50%;
   z-index: 0;
-}
+} */
 
 .salon-image img {
   position: relative;
   z-index: 1;
-  max-height: 500px;
+  /* width: 400px; */
+  max-height: 450px;
   width: auto;
   object-fit: cover;
+  /* margin: auto; */
 }
 
 /* RESPONSIVE: Tablet and below */
@@ -2217,3 +2237,100 @@ body {
 .col-6{
   padding-right: 0;
 }
+
+.social-img{
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+}
+.social-img:hover{
+  transform: scale(1.15);
+}
+
+  .ratecard-outter {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+#category-buttons {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 99999;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  max-width: 90%;
+}
+
+.ratecard-btn {
+  /* background-color: #6f7b63;  */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: #333;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 4px 10px;
+  line-height: 1;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: #e53935;
+}
+@media (max-width: 600px) {
+  #category-buttons {
+    /* top: 10px; */
+    /* left: 10px; */
+    /* right: 10px; */
+    /* transform: none; */
+    width: 250px;
+    padding: 35px;
+    gap: 12px;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 10px;
+  }
+
+  .ratecard-btn {
+    /* width: 100%; */
+    font-size: 16px;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 24px;
+    padding: 0 10px;
+  }
+}
+

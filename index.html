@@ -19,8 +19,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-
+    <!-- <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" /> -->
+ <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+    rel="stylesheet"
+  />
     <!-- Font Awesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
@@ -56,6 +59,17 @@
         background-color: #6a7e5f;
       }
     </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Radiance Salon",
+        "url": "https://radiancesalons.com/",
+        "logo": "https://radiancesalons.com/logo.png"
+      }
+    </script>
+    <link rel="icon" href="/logo.png" type="image/x-icon" />
+<link rel="icon" href="https://radiancesalons.com/logo.png" type="image/png">
   </head>
 
   <body>
@@ -80,27 +94,35 @@
           <a
             href="https://www.facebook.com/radiancebridalstudio"
             target="_blank"
-            class="text-color mx-2"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
+            class="text-color"
+            ><img
+              class="social-img"
+              src="./images/about_icons/icons8-facebook-48.png"
+          /></a>
           <a
             href="https://www.instagram.com/radiance_unisexsalon/?hl=en"
             target="_blank"
-            class="text-color mx-2"
-            ><i class="fab fa-instagram"></i
-          ></a>
+            class="text-color"
+            ><img
+              class="social-img"
+              src="./images/about_icons/icons8-instagram-48.png"
+          /></a>
           <a
             href="https://www.youtube.com/@KREKHAROSHANEE05"
             target="_blank"
-            class="text-color mx-2"
-            ><i class="fab fa-youtube"></i
-          ></a>
+            class="text-color"
+            ><img
+              class="social-img"
+              src="./images/about_icons/icons8-youtube-48.png"
+          /></a>
           <a
             href="https://www.linkedin.com/in/rekha-k-1868a6275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
-            class="text-color mx-2"
-            ><i class="fab fa-linkedin"></i
-          ></a>
+            class="text-color"
+            ><img
+              class="social-img"
+              src="./images/about_icons/icons8-linkedin-48.png"
+          /></a>
         </div>
       </div>
     </div>
@@ -168,76 +190,65 @@
 
     <div class="salon-promo">
       <div class="salon-text">
-        <a
-          href="images/rate_card/22.jpg"
-          data-lightbox="men"
-          class="btn btn-sm text-white ratecard-btn"
-        >
-          Ratecard
-        </a>
+        <!-- Rate Card Button -->
+<a
+  class="btn btn-sm text-white ratecard-outter"
+  onclick="toggleCategoryButtons(event)"
+>
+  Rate card
+</a>
 
-        <!-- Category Toggle Buttons -->
-        <div
-          id="category-buttons"
-          style="
-            display: none;
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 99999;
-          "
-        >
-          <button class="btn ratecard-btn" onclick="showCategory('men')">
-            Men
-          </button>
-          <button class="btn ratecard-btn" onclick="showCategory('women')">
-            Women
-          </button>
-        </div>
+<!-- Category Toggle Buttons -->
+ <div id="category-buttons"  style="display: none;">
+  <button class="btn ratecard-btn" onclick="showCategory('men')">Men</button>
+  <button class="btn ratecard-btn" onclick="showCategory('women')">Women</button>
+ <button class="close-btn" onclick="hideCategoryButtons()">×</button>
+</div>
 
-        <!-- Hidden Lightbox links grouped by category -->
-        <!-- Men Category -->
-        <div style="display: none" id="lightbox-men">
-          <a href="images/rate_card/23.jpg" data-lightbox="men"></a>
-          <a href="images/rate_card/24.jpg" data-lightbox="men"></a>
-          <a href="images/rate_card/25.jpg" data-lightbox="men"></a>
-          <a href="images/rate_card/26.jpg" data-lightbox="men"></a>
-          <a href="images/rate_card/27.jpg" data-lightbox="men"></a>
-          <a href="images/rate_card/28.jpg" data-lightbox="men"></a>
-          <a href="images/rate_card/29.jpg" data-lightbox="men"></a>
-          <a href="images/rate_card/30.jpg" data-lightbox="men"></a>
-          <a href="images/rate_card/32.jpg" data-lightbox="men"></a>
-          <a href="images/rate_card/33.jpg" data-lightbox="men"></a>
-        </div>
+<!-- Hidden Lightbox Links -->
+<!-- Men Category -->
+<div style="display: none" id="lightbox-men">
+  <a href="images/rate_card/22.jpg" data-lightbox="men"></a>
+  <a href="images/rate_card/23.jpg" data-lightbox="men"></a>
+  <a href="images/rate_card/24.jpg" data-lightbox="men"></a>
+  <a href="images/rate_card/25.jpg" data-lightbox="men"></a>
+  <a href="images/rate_card/26.jpg" data-lightbox="men"></a>
+  <a href="images/rate_card/27.jpg" data-lightbox="men"></a>
+  <a href="images/rate_card/28.jpg" data-lightbox="men"></a>
+  <a href="images/rate_card/29.jpg" data-lightbox="men"></a>
+  <a href="images/rate_card/30.jpg" data-lightbox="men"></a>
+  <a href="images/rate_card/32.jpg" data-lightbox="men"></a>
+  <a href="images/rate_card/33.jpg" data-lightbox="men"></a>
+</div>
 
-        <!-- Women Category -->
-        <div style="display: none" id="lightbox-women">
-          <a href="images/rate_card/1.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/2.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/3.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/4.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/5.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/6.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/7.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/8.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/9.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/10.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/11.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/12.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/13.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/14.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/15.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/16.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/17.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/18.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/19.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/20.jpg" data-lightbox="women"></a>
-          <a href="images/rate_card/21.jpg" data-lightbox="women"></a>
-        </div>
+<!-- Women Category -->
+<div style="display: none" id="lightbox-women">
+  <a href="images/rate_card/1.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/2.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/3.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/4.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/5.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/6.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/7.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/8.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/9.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/10.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/11.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/12.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/13.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/14.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/15.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/16.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/17.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/18.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/19.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/20.jpg" data-lightbox="women"></a>
+  <a href="images/rate_card/21.jpg" data-lightbox="women"></a>
+</div>
 
         <h1 class="mt-4" data-aos="zoom-in" data-aos-duration="3000">
-          Beauty is an Investment, Not an Expense.
+          From Cuts to Color, Facials to Bridal – We Perfect Every Detail @
+          Radiance..
         </h1>
         <p
           data-aos="zoom-in"
@@ -249,17 +260,11 @@
           stunning hair transformations to relaxing skincare treatments, we
           bring your beauty dreams to life.
         </p>
-        <a
-          href="appointment"
-          class="salon-button"
-          data-aos="zoom-in"
-          data-aos-duration="3000"
-          >Book an Appointment</a
-        >
+        <a href="appointment" class="salon-button">Book an Appointment</a>
       </div>
 
       <div class="salon-image" data-aos="zoom-in" data-aos-duration="3000">
-        <img src="images/hair/10003.png" alt="Salon Service" />
+        <img src="images/home/banner.png" alt="Salon Service" />
       </div>
     </div>
 
@@ -427,10 +432,11 @@
                 data-aos="zoom-in"
                 data-aos-duration="2000"
               >
-                "At Radiance Family Unisex salon, we’re not just a unisex salon
-                in salem, we’re a place where you can unlock your true beauty
-                potential! Whether you’re perfecting your hair, skin, nails, or
-                makeup, our expert training is designed to help you shine.”
+                "At Radiance Family's Salon & Bridal Studio in Salem is a
+                premier destination dedicated to helping you unlock your true
+                beauty potential. We offer a comprehensive range of expert
+                services for hair, skin, nails, and makeup, designed to perfect
+                your look and help you shine for any occasion."
               </figcaption>
             </figure>
           </div>
@@ -445,7 +451,7 @@
           data-aos="zoom-in-down"
           data-aos-duration="1000"
         >
-          <p class="hair-small-title">STYLE & COMFORT</p>
+          <h2 class="hair-heading py-2">STYLE & COMFORT</h2>
           <h1>
             <em>Indulge</em> in A Relaxing Atmosphere <br />
             With Our Passionate <em>Stylists</em>
@@ -466,33 +472,41 @@
             data-aos="zoom-in-up"
             data-aos-duration="1400"
           >
-            <h2>GENTLE & EFFECTIVE</h2>
-            <h3>Harmony with Nature</h3>
+            <h2>Feel Good, Look Great</h2>
+            <h3>Step into Radiance</h3>
+
             <p>
-              “At our salon, luxury meets nature in its purest form. Every
-              product we use is thoughtfully selected—plant-powered, toxin-free,
-              and sustainably sourced—ensuring a holistic beauty experience that
-              nurtures your body, mind, and the environment.”
+              "At Radiance Family's Salon & Bridal Studio, luxury meets mindful
+              care. Every product we use is thoughtfully selected for its
+              quality, effectiveness, and responsible sourcing—ensuring a
+              holistic beauty experience that nurtures your body, mind, and the
+              environment. We are committed to providing services that are
+              gentle on you, and kind to the planet."
             </p>
             <ul>
-              <li>Luxury inspired by nature.</li>
-              <li>Pure, plant-powered treatments.</li>
-              <li>Gentle on you, kind to the planet.</li>
+              <li>Where Style Meets Comfort</li>
+              <li>
+                Relax, refresh, and feel at home while we bring out your best
+                look.
+              </li>
+              <li>
+                Radiance Family Salon — more than beauty, it’s an experience.
+              </li>
             </ul>
             <a href="about" class="hair-btn">Know More</a>
           </div>
 
           <div class="hair-text-box">
             <h2 data-aos="zoom-in" data-aos-duration="1000">
-              ELEVATE YOUR LOOK
+              Quality You Can Trust
             </h2>
             <h3 data-aos="zoom-in" data-aos-duration="1000">
-              Flawless Style Products
+              Healthy Hair. Glowing Skin.
             </h3>
             <p data-aos="zoom-in" data-aos-duration="1000">
-              “Elevate your everyday look with our signature Flawless Style
-              Product, meticulously formulated to provide long-lasting hold,
-              natural shine, and hair protection for any style you desire.”
+              At Radiance Family Salon, we use only top-tier, professional
+              products to ensure healthy hair, glowing skin, and long-lasting
+              results. Every service delivers quality you can see and feel.
             </p>
             <div class="hair-features">
               <div class="svg-con">
@@ -551,7 +565,7 @@
                     d="M19.1,4.5c-0.7,0-1.2,0.5-1.2,1.2s0.5,1.2,1.2,1.2c0.7,0,1.2-0.5,1.2-1.2S19.7,4.5,19.1,4.5z M19.1,6.1 c-0.2,0-0.4-0.2-0.4-0.4c0-0.2,0.2-0.4,0.4-0.4c0.2,0,0.4,0.2,0.4,0.4C19.5,5.9,19.3,6.1,19.1,6.1z"
                   ></path>
                 </svg>
-                <p>Paraben-Free</p>
+                <!-- <p>Paraben-Free</p> -->
               </div>
               <div class="svg-con">
                 <svg
@@ -567,7 +581,7 @@
                   ></path>
                 </svg>
 
-                <p>Sulfate-Free</p>
+                <!-- <p>Sulfate-Free</p> -->
               </div>
               <div class="svg-con">
                 <svg
@@ -583,7 +597,7 @@
                   ></path>
                 </svg>
 
-                <p>Chemical Free</p>
+                <!-- <p>Chemical Free</p> -->
               </div>
             </div>
             <!-- <a href="about" class="hair-btn">View All Product</a> -->
@@ -845,7 +859,7 @@
               <div class="col-6">
                 <div class="box text-center p-4">
                   <h3 class="display-4 text-primary" data-toggle="counter-up">
-                    15
+                    14
                   </h3>
                   <h6 class="text-uppercase">Years of Excellence</h6>
                 </div>
@@ -990,11 +1004,11 @@
           </p>
           <div class="d-flex flex-column align-items-center gap-2 mb-4">
             <div class="h5">
-              <i class="far fa-clock me-2"></i>Monday – Friday:
-              <strong>9:00 AM - 9:00 PM</strong>
+              <i class="far fa-clock me-2"></i> Monday – Friday:
+              <strong>&nbsp;&nbsp; 9:00 AM - 9:00 PM </strong>
             </div>
             <div class="h5">
-              <i class="far fa-clock me-2"></i>Saturday – Sunday:
+              <i class="far fa-clock me-2"></i> Saturday – Sunday:
               <strong>8:00 AM - 9:00 PM</strong>
             </div>
           </div>
@@ -1280,7 +1294,10 @@
                   </div>
                 </div>
                 <p class="m-0">
-                I recently visited Radiance Parlour. The ambience was relaxing, the service was great, and the staff were professional. It’s also good value for money. Highly recommend!
+                  I recently visited Radiance Parlour. The ambience was
+                  relaxing, the service was great, and the staff were
+                  professional. It’s also good value for money. Highly
+                  recommend!
                 </p>
               </div>
             </div>
@@ -1315,7 +1332,10 @@
                     class="text-secondary"
                     target="_blank"
                   >
-                    <i class="bi bi-facebook" style="font-size: 24px"></i>
+                    <img
+                      class="social-img"
+                      src="./images/about_icons/icons8-facebook-48.png"
+                    />
                   </a>
                 </li>
                 <li>
@@ -1324,7 +1344,10 @@
                     class="text-secondary"
                     target="_blank"
                   >
-                    <i class="bi bi-instagram" style="font-size: 24px"></i>
+                    <img
+                      class="social-img"
+                      src="./images/about_icons/icons8-instagram-48.png"
+                    />
                     <!-- New Twitter (X) logo -->
                   </a>
                 </li>
@@ -1334,7 +1357,10 @@
                     class="text-secondary"
                     target="_blank"
                   >
-                    <i class="bi bi-youtube" style="font-size: 24px"></i>
+                    <img
+                      class="social-img"
+                      src="./images/about_icons/icons8-youtube-48.png"
+                    />
                   </a>
                 </li>
                 <li>
@@ -1343,7 +1369,10 @@
                     class="text-secondary"
                     target="_blank"
                   >
-                    <i class="bi bi-linkedin" style="font-size: 24px"></i>
+                    <img
+                      class="social-img"
+                      src="./images/about_icons/icons8-linkedin-48.png"
+                    />
                   </a>
                 </li>
               </ul>
@@ -1459,7 +1488,7 @@
     <!-- Back to Top -->
     <!-- <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a> -->
     <a href="tel:9095859707" class="call-link" aria-label="Call Us">
-      <img src="img/call.jpg" alt="Call" />
+      <img src="img/call.jpeg" alt="Call" />
     </a>
     <a
       href="https://wa.me/9095859707"
@@ -1702,7 +1731,7 @@
       setupSwipe();
     </script>
 
-    <script>
+    <!-- <script>
       function showCategory(category) {
         const selector =
           category === "men" ? "#lightbox-men a" : "#lightbox-women a";
@@ -1746,12 +1775,51 @@
           attributeFilter: ["style", "class"],
         });
       });
-    </script>
+    </script> -->
 
     <script src="js/active.js"></script>
     <!-- Active JS -->
     <script src="css/plugins.js"></script>
 
     <script src="js/jquery-2.2.4.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+  <script>
+  function toggleCategoryButtons(event) {
+    event.preventDefault();
+    const categoryBox = document.getElementById("category-buttons");
+    categoryBox.style.display = "flex";
+
+    // Delay adding event listener to avoid immediate close
+    setTimeout(() => {
+      document.addEventListener("click", outsideClickHandler);
+    }, 10);
+  }
+
+  function hideCategoryButtons() {
+    const categoryBox = document.getElementById("category-buttons");
+    categoryBox.style.display = "none";
+
+    document.removeEventListener("click", outsideClickHandler); // Cleanup
+  }
+
+  function showCategory(category) {
+    const links = document.querySelectorAll(`#lightbox-${category} a`);
+    if (links.length > 0) {
+      links[0].click();
+    }
+    hideCategoryButtons();
+  }
+
+  // Detect outside click
+  function outsideClickHandler(e) {
+    const box = document.getElementById("category-buttons");
+    if (!box.contains(e.target)) {
+      hideCategoryButtons();
+    }
+  }
+</script>
+    
   </body>
 </html>
