@@ -1556,6 +1556,7 @@ button svg {
   justify-content: center;
   align-items: flex-end;
   min-height: 500px;
+  /* margin-top: 10px; */
   width: 50%;
 }
 
@@ -2191,9 +2192,8 @@ body {
 }
 
      .bg-jumbotron-acadamy {
-    background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)), url(../images/home/Radiance\ 1920\ X\ 1080.png\ academy.png), no-repeat center center;
-    background-size: cover;
-    height: 600px !important;
+    background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)), url(../images/home/Radiance\ 1920\ X\ 1080.png\ academy.png)  no-repeat center center;
+  background-size: cover;
   }
     .bg-jumbotron-contact {
     background-color: #6f7b63 !important;
@@ -2238,11 +2238,19 @@ body {
   padding-right: 0;
 }
 
-.social-img{
-  width: 30px;
-  height: 30px;
-  margin: 2px;
+.social-img {
+  width: 27px;
+  height: 27px;
+  object-fit: cover;
+  margin: 3px;
+  border-radius: 5px; /* makes it fully circular */
+  transition: transform 0.2s ease;
 }
+
+.social-img:hover {
+  transform: scale(1.1); /* slight zoom on hover */
+}
+
 .social-img:hover{
   transform: scale(1.15);
 }

@@ -79,6 +79,7 @@
     .image-content {
       height: auto;
       max-width: 100%;
+      width: 80%;
     }
   
     .text-content h1 {
@@ -91,6 +92,8 @@
   
     .image-content img {
       height: auto;
+      
+      padding: 10px;
     }
   }
   
